@@ -1,0 +1,154 @@
+*{
+    --moz-column-rule-color: #000000;
+    --moz-column-rule-color: #ffffff;
+}
+
+body{
+    background-color:rgb(255, 215, 190);
+    height: 100vh;
+}
+
+.field{
+    font-weight: 700;
+    margin: 0% auto;
+    padding: 0%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+h1{
+    color: #151515;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* AQUI CONTÉM UMA CLASS DE PARÁGRAFO ÚNICO, PARA ALTERAÇÃO DE CORES E TAMANHO DA FONTE. ESPECÍFICO À ELES. */
+.Single{
+    color: rgba(20, 15, 15, 0.838);
+    font-size: 27px;
+}
+.Single footer {
+    font-size: small;
+    
+}
+
+/*----------------*/
+
+.Middle-of-the-site{
+    display:flex;
+}
+
+.button-contato button::before{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    user-select: none;
+   
+}
+
+/* estilo do cabeçalho */
+
+.field .soon img{
+    width: 200px;
+    height: 200px;
+}
+
+.field .img-apex-site img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header > .field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+    user-select: none;
+}
+
+header a:hover {
+    color: #595959;
+    transform: scale(1.09);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+ 
+
+#nav-footer ul { 
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+#nav-footer ul li { display: inline; }
+
+#nav-footer ul li { 
+    padding: 2px 10px; 
+    display: inline-block; /* visual do link */ 
+    text-decoration: none; 
+}
+
+/* SITE HISTORIA*/
+
+.site-historia{
+    margin-top: 5%;
+    position: relative;
+    
+}
+
+.text-historia{
+    text-align: center;
+}
+
+.historia-escrita{
+    padding: 0 auto;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.img-churrasco img{
+    width: 20px;
+    height: 30px;
+}
+
+/* ENSIMANETOS */
+
+.ensinamentos{
+    position: relative;
+    margin-top: 5%;
+}
+.videos-ensimanetos{
+    position: relative;
+    margin-top: 5%;
+}
