@@ -1,3 +1,4 @@
+
 *{
     --moz-column-rule-color: #000000;
     --moz-column-rule-color: #ffffff;
@@ -35,7 +36,7 @@ h1{
 
 /*----------------*/
 
-.Middle-of-the-site{
+.field .Middle-of-the-site{
     display:flex;
 }
 
@@ -64,6 +65,9 @@ h1{
 .field .soon img{
     width: 200px;
     height: 200px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
 }
 
 .field .img-apex-site img {
@@ -72,38 +76,52 @@ h1{
     border-radius: 5%;
 }
 
-header{
-    padding: 40px 4%;
-}
-
-header > .field{
+header {
+    background-color: #2c0c0c;
+    color: #fff;
+    padding: 1px;
+  
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+  
+  
+    box-shadow: 0 4px 8px rgba(31, 2, 2, 0.3); 
+    border-bottom: 2px solid #300606;
+  
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-header a{
-    color: #000000;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin: 0;
+  }
+  
+  header nav ul {
+    list-style: none; 
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    display: inline-block;
-    transition: .3s;
-    user-select: none;
-}
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ddd;
+  } 
 
-header a:hover {
-    color: #595959;
-    transform: scale(1.09);
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 0 40px;
-}
- 
+  .container {
+    max-width: 100%;
+  }
 
 #nav-footer ul { 
     padding:0px;
@@ -121,34 +139,68 @@ header nav ul li {
 
 /* SITE HISTORIA*/
 
-.site-historia{
-    margin-top: 5%;
-    position: relative;
-    
+h2{
+    color: #151515;
+    font-size: 30px;
+    text-align: center;    
 }
 
-.text-historia{
-    text-align: center;
+.field2{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0% auto;
+    padding: 0%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    border-radius: 5%;
 }
 
-.historia-escrita{
-    padding: 0 auto;
-    margin: 0 auto;
-    font-size: 25px;
-}
-
-.img-churrasco img{
-    width: 20px;
-    height: 30px;
-}
-
-/* ENSIMANETOS */
-
-.ensinamentos{
-    position: relative;
+.field2 .Middle-of-the-site2{
+    display:flex;
     margin-top: 5%;
 }
-.videos-ensimanetos{
-    position: relative;
+
+.field2 .img-historia img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+/* MUNDO DO CHURRASCO */
+
+h3{
+    color: #151515;
+    font-size: 30px;
+    text-align: center;    
+}
+
+.field3{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0% auto;
+    padding: 0%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+.field3 .Middle-of-the-site3{
+    display:flex;
     margin-top: 5%;
+}
+
+.field3 .video-ensinamentos{
+    display:list-item;
+}
+
+.soon {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.soon img{
+    width: 50%;
+    height: auto;
+    border-radius: 5%;
+
 }
