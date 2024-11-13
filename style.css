@@ -1,206 +1,283 @@
-
-*{
-    --moz-column-rule-color: #000000;
-    --moz-column-rule-color: #ffffff;
-}
-
-body{
-    background-color:rgb(255, 215, 190);
-    height: 100vh;
-}
-
-.field{
-    font-weight: 700;
-    margin: 0% auto;
-    padding: 0%;
-    max-width: 1280px;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    border-radius: 5%;
 }
 
-h1{
-    color: #151515;
-    font-size: 30px;
-    text-align: center;
-}
-
-/* AQUI CONTÉM UMA CLASS DE PARÁGRAFO ÚNICO, PARA ALTERAÇÃO DE CORES E TAMANHO DA FONTE. ESPECÍFICO À ELES. */
-.Single{
-    color: rgba(20, 15, 15, 0.838);
-    font-size: 27px;
-}
-.Single footer {
-    font-size: small;
-    
-}
-
-/*----------------*/
-
-.field .Middle-of-the-site{
-    display:flex;
-}
-
-.button-contato button::before{
-    content: "";
-    display: block;
-    width: 0px;
-    height: 86%;
-    position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #fff;
-    box-shadow: 0 0 50px 30px #fff;
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    user-select: none;
-   
-}
-
-/* estilo do cabeçalho */
-
-.field .soon img{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-self: flex-start;
-    justify-content: flex-start;
-}
-
-.field .img-apex-site img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    margin: 0;
 }
 
 header {
-    background-color: #2c0c0c;
+    background-color: #333;
+    padding: 20px 0;
     color: #fff;
-    padding: 1px;
-  
-   
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 50px;
-  
-  
-    box-shadow: 0 4px 8px rgba(31, 2, 2, 0.3); 
-    border-bottom: 2px solid #300606;
-  
+}
+
+header .field {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  header h1 {
-    font-size: 24px; 
-    font-weight: bold; 
-    margin: 0;
-  }
-  
-  header nav ul {
-    list-style: none; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .soon img {
+    max-width: 150px;
+}
+
+header .menu ul {
     display: flex;
-    gap: 20px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
+    list-style: none;
+}
+
+header .menu ul li {
+    margin: 0 15px;
+}
+
+header .menu ul li a {
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  header nav ul li a:hover {
-    color: #ddd;
-  } 
-
-  .container {
-    max-width: 100%;
-  }
-
-#nav-footer ul { 
-    padding:0px;
-    margin:0px;
-    list-style:none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-#nav-footer ul li { display: inline; }
-
-#nav-footer ul li { 
-    padding: 2px 10px; 
-    display: inline-block; /* visual do link */ 
-    text-decoration: none; 
+header .menu ul li a:hover {
+    color: #ffa500;
 }
 
-/* SITE HISTORIA*/
-
-h2{
-    color: #151515;
-    font-size: 30px;
-    text-align: center;    
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.field2{
-    font-weight: 700;
-    font-size: 20px;
-    margin: 0% auto;
-    padding: 0%;
-    max-width: 1280px;
-    box-sizing: border-box;
-    border-radius: 5%;
-}
-
-.field2 .Middle-of-the-site2{
-    display:flex;
-    margin-top: 5%;
-}
-
-.field2 .img-historia img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5%;
-}
-
-/* MUNDO DO CHURRASCO */
-
-h3{
-    color: #151515;
-    font-size: 30px;
-    text-align: center;    
-}
-
-.field3{
-    font-weight: 700;
-    font-size: 20px;
-    margin: 0% auto;
-    padding: 0%;
-    max-width: 1280px;
-    box-sizing: border-box;
-    border-radius: 5%;
-}
-
-.field3 .Middle-of-the-site3{
-    display:flex;
-    margin-top: 5%;
-}
-
-.field3 .video-ensinamentos{
-    display:list-item;
-}
-
-.soon {
+.site-apex {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
 }
 
-.soon img{
-    width: 50%;
-    height: auto;
-    border-radius: 5%;
+.text-site-apex {
+    max-width: 600px;
+    margin-right: 20px;
+}
 
+.text-site-apex h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-site-apex p.Single {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.button-contato button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button-contato button:hover {
+    background-color: #ffa500;
+}
+
+.img-apex-site img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Seção da História */
+.historia-site {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+}
+
+.historia-site .field2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-historia h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-historia p.Single2 {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.img-historia img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Seção dos Ensinamentos */
+.ensinamentos {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ensinamentos h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ensinamentos p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.video-ensinamentos iframe {
+    margin: 15px;
+    border-radius: 8px;
+}
+
+/* Galeria de imagens */
+.imagens--churrascaria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.imagens--churrascaria img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Formulário de reserva */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form legend {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ffa500;
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Mapa */
+.mapa iframe {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}bod
+
+footer .text-body-secondary {
+    color: #ccc;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a img {
+    filter: invert(100%);
+    transition: filter 0.3s ease;
+}
+
+footer nav ul li a:hover img {
+    filter: invert(60%) sepia(100%) saturate(500%) hue-rotate(-40deg);
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .site-apex, .historia-site .field2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-apex .text-site-apex, 
+    .historia-site .text-historia {
+        margin-right: 0;
+    }
+
+    .img-apex-site img,
+    .img-historia img {
+        max-width: 100%;
+    }
 }
